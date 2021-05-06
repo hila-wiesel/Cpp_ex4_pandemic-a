@@ -8,6 +8,8 @@
 
 namespace pandemic{
 		class Player{
+			protected:
+			City _city;
 			public:
 				Player(Board board, City city){}
 				~Player(){}
@@ -15,7 +17,7 @@ namespace pandemic{
 				Player& fly_direct(City  city);
 				Player& fly_charter(City  city);
 				Player& fly_shuttle(City  city);
-				Player& build(City  city);
+				Player& build();
 				Player& discover_cure(Color  color);
 				Player& treat(City  city);
 				std :: string role();

@@ -10,7 +10,7 @@ namespace pandemic{
     class OperationsExpert : public Player{
         public:
 			OperationsExpert(Board borad, City city):Player( borad,  city){};
-            void build();
+            Player& build();
             std::string role();
     };
 }
